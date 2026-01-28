@@ -1,0 +1,39 @@
+div,
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: #fa0000;
+}
+
+h2 {
+    color: #60881f;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+label {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+select,
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 3px;
+}

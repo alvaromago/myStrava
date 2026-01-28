@@ -2,32 +2,47 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="styles.css" />
 		<title>myStrava</title>
 	</head>
 	<body>
-		<div>
-			<h1>myStrava</h1>
-			<h2>Introduce tu actividad a continuación:</h2>
-			<form>
-				<div>
-					<label for="nombre">Título:</label>
-					<input type="text" />
-				</div>
-				<br />
-				<div>
-					<label for="deporte">Deporte:</label>
-					<input type="text" />
-				</div>
-				<br />
-				<div>
-					<label for="fecha">Fecha:</label>
-					<input type="date" />
-				</div>
-				<br />
-				<div>
-					<button type="submit">Enviar</button>
-				</div>
-			</form>
-		</div>
+		<section>
+			<div>
+				<h1>myStrava</h1>
+				<h2>Introduce tu actividad a continuación:</h2>
+				<form>
+					<div>
+						<label for="nombre">Título:</label>
+						<input type="text" />
+					</div>
+					<br />
+					<div>
+						<label for="deporte">Deporte:</label>
+						<select>
+							<option value="">Selecciona un deporte</option>
+							<option value="Correr">Correr</option>
+							<option value="Nadar">Nadar</option>
+							<option value="Ciclismo">Ciclismo</option>
+						</select>
+					</div>
+					<br />
+					<div>
+						<label for="fecha">Fecha:</label>
+						<input type="date" />
+					</div>
+					<br />
+					<div>
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>Actividades</h2>
+				<ul id="lista-actividades"></ul>
+			</div>
+		</section>
 	</body>
+	<script src="app.js"></script>
 </html>
