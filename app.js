@@ -17,7 +17,9 @@ function addActividad(actividad, index) {
 	actividadItem.appendChild(nombre);
 
 	const meta = document.createElement("p");
-	meta.textContent = `${actividad.deporte} (${actividad.fecha})`;
+	const fecha = new Date(actividad.fecha);
+	const fechaFormateada = fecha.toLocaleDateString("es-ES");
+	meta.textContent = `${actividad.deporte} (${fechaFormateada})`;
 	actividadItem.appendChild(meta);
 
 	const deleteButton = document.createElement("button");
